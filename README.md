@@ -1,20 +1,64 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# HR Pro Toolbox - Lucky Draw Daily II
 
-# Run and deploy your AI Studio app
+A modern React application for HR professionals to manage participants, perform lucky draws, and organize team groupings.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1tS6zagJOjr-YN6i9I5_oJ75_5XyAkhbq
+- **Participant Management**: Easily add, edit, and list participants.
+- **Lucky Draw**: Interactive tool to pick winners from the participant list.
+- **Auto Grouping**: Automatically divide participants into balanced teams.
+- **AI Integration**: Powered by Google Gemini for intelligent features.
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
 
+- Node.js (v20 or higher recommended)
+- npm
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/lwhtyk0121/luckydraw_dailyII.git
+   cd luckydraw_dailyII
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Configure Environment Variables:
+   Create a `.env` file in the root directory and add your API key:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+### Development
+
+Run the development server:
+```bash
+npm run dev
+```
+The application will be available at `http://localhost:3000`.
+
+### Production Build
+
+To create a production-ready build:
+```bash
+npm run build
+```
+The output will be in the `dist` folder.
+
+## Deployment
+
+This project is configured to deploy automatically to **GitHub Pages** via GitHub Actions.
+
+1. Go to your GitHub repository **Settings > Secrets and variables > Actions**.
+2. Add a new repository secret named `GEMINI_API_KEY`.
+3. Push your changes to the `main` branch, and the deployment will trigger automatically.
+
+## License
+
+Private.
